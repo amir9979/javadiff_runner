@@ -78,7 +78,7 @@ jobs:
           fetch-depth: 0
           
       - name: execute
-        run: python jit_main.py ${{ matrix.commit_ind }}
+        run: python ./javadiff/jit_main.py ${{ matrix.commit_ind }}
 
       - name: Upload data
         if: ${{ always() }}
